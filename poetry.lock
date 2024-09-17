@@ -59,6 +59,21 @@ async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
 
 [[package]]
+name = "flask-login"
+version = "0.6.3"
+description = "User authentication and session management for Flask."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "Flask-Login-0.6.3.tar.gz", hash = "sha256:5e23d14a607ef12806c699590b89d0f0e0d67baeec599d75947bf9c147330333"},
+    {file = "Flask_Login-0.6.3-py3-none-any.whl", hash = "sha256:849b25b82a436bf830a054e74214074af59097171562ab10bfa999e6b78aae5d"},
+]
+
+[package.dependencies]
+Flask = ">=1.0.4"
+Werkzeug = ">=1.0.1"
+
+[[package]]
 name = "itsdangerous"
 version = "2.2.0"
 description = "Safely pass data to untrusted environments and back."
@@ -156,6 +171,16 @@ files = [
 ]
 
 [[package]]
+name = "peewee"
+version = "3.17.6"
+description = "a little orm"
+optional = false
+python-versions = "*"
+files = [
+    {file = "peewee-3.17.6.tar.gz", hash = "sha256:cea5592c6f4da1592b7cff8eaf655be6648a1f5857469e30037bf920c03fb8fb"},
+]
+
+[[package]]
 name = "werkzeug"
 version = "3.0.4"
 description = "The comprehensive WSGI web application library."
@@ -175,4 +200,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10.0,<3.12"
-content-hash = "642cb150dc492eae7bc6e9c451dc1d56084ff851d52ffc06332a2247c45ce0dc"
+content-hash = "13e1ff80e24a43b1d58b3fcb2a04052d6e9575c0c276d4be07761dc09e7be19d"
