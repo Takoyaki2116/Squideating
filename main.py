@@ -1,7 +1,9 @@
+import re
 from flask import Flask
 from flask import render_template
 from flask import redirect
 from datebase import Turtles
+from flask import request
 
 app = Flask(__name__)
 
@@ -20,6 +22,11 @@ def signup():
 @app.route('/top')
 def top():
   return render_template('top.html')
+
+@app.route('/new', methods=['POST'])
+def new():
+  Turtles.create(name = request.form['username'], password = request.form['password'])
+  return redirect('/login')
   
 
 
